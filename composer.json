@@ -1,0 +1,24 @@
+{
+    "name": "realdriss/menu",
+    "description": "Menu package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "RealDriss\\Menu\\": "src"
+        }
+    },
+    "require": {
+        "realdriss/platform": "*@dev",
+        "realdriss/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealDriss\\Menu\\Providers\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "RealDriss\\Menu\\Facades\\MenuFacade"
+            }
+        }
+    }
+}
